@@ -51,11 +51,15 @@
     </p>
     <h2>Usage</h2>
     <p>
-      lettery accepts two parametters: <code>letters</code> and <code>options</code>.
+      lettery accepts two parametters: <code>letters/words</code> and <code>options</code>.
     </p>
 <pre><code>$( '.lettery' ).lettery( letters, options );</code></pre>
     <p>
-      <code>letters</code> should be an array of letters, so for one letter it would be: <code>[ "w" ]</code>, for more letters: <code>[ "w", "t", "f" ]</code>.<br>
+      <code>letters/words</code> should be an array of letters or words, so for one letter it would be: <code>[ "w" ]</code>, for more letters: <code>[ "w", "t", "f" ]</code>, <br>and for words: <code>[ "bone", "ribs" ]</code>.<br>
+
+      If you want to use words, you neet do define option <code>words</code> to <code>true</code>
+    </p>
+    <p>
       <code>options: styles</code> can be any css:
     </p>
 <pre><code>styles: {
@@ -67,13 +71,14 @@
       <code>options: class</code> if you wish use custom css class for single letter, define that class name here<br><br>
       Full example:
     </p>
-<pre><code>$( '.lettery' ).lettery( [ "w", "t", "f" ], {
+<pre><code>$( '.lettery' ).lettery( [ "bone", "ribs" ], {
   styles: {
     'position': 'relative',
     'bottom': '4px',
     'color': '#e46'
   },
-  class: "letter"
+  class: "letter",
+  words: true
 });
 </code></pre>
     <p>
@@ -82,21 +87,24 @@
       <p>
         Bacon ipsum dolor amet chicken prosciutto chuck biltong, beef strip steak andouille drumstick bacon ham hock short loin pig pork loin. Frankfurter ribeye shank t-bone brisket spare ribs, porchetta pancetta biltong bresaola leberkas pork.
       </p>
-      Result:
-      <h2 class="lettery">Shoulder pork chuck pastrami</h2>
-      <p class="lettery">
-        Bacon ipsum dolor amet chicken prosciutto chuck biltong, beef strip steak andouille drumstick bacon ham hock short loin pig pork loin. Frankfurter ribeye shank t-bone brisket spare ribs, porchetta pancetta biltong bresaola leberkas pork.
+      <p>
+        Result:
+        <h2 class="lettery">Shoulder pork chuck pastrami</h2>
+        <p class="lettery">
+          Bacon ipsum dolor amet chicken prosciutto chuck biltong, beef strip steak andouille drumstick bacon ham hock short loin pig pork loin. Frankfurter ribeye shank t-bone brisket spare ribs, porchetta pancetta biltong bresaola leberkas pork.
+        </p>
       </p>
     </p>
   </div>
   <script>
-    $( '.lettery' ).lettery( [ "w", "t", "f" ], {
+    $( '.lettery' ).lettery( [ "bone", "ribs" ], {
       styles: {
         'position': 'relative',
         'bottom': '4px',
         'color': '#e46'
       },
-      class: "letter"
+      class: "letter",
+      words: true
     });
   </script>
 </body>

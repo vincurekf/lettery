@@ -7,8 +7,10 @@ Simple jQuery plugin to help repair some bad text behavior.
 $( '.lettery' ).lettery( letters, options );```</pre>
 ```
 
-```letters``` should be an array of letters, so for one letter it would be: 
-```[ "w" ]```, for more letters: ```[ "w", "t", "f" ]```.
+```letters/words``` should be an array of letters or words, so for one letter it would be: 
+```[ "w" ]```, for more letters: ```[ "w", "t", "f" ]```, and for words: 
+```[ "bone", "ribs" ]```.
+If you want to use words, you neet do define option ```words``` to ```true```
 
 ```options: styles``` can be any css:
 ```
@@ -22,13 +24,17 @@ styles: {
 
 Full example:
 ```
-$( '.lettery' ).lettery( [ "w", "t", "f" ], {
+$( '.lettery' ).lettery( [ "bones", "ribs" ], {
   styles: {
     'position': 'relative',
     'bottom': '4px',
     'color': '#e46'
   },
-  class: "letter"
+  class: "letter",
+  words: true
 });
 ```
+
+Preview:
+![lettery preview](https://raw.githubusercontent.com/vincurekf/lettery/master/preview.jpg)
 Licence MIT, so, you know...
