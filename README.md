@@ -1,7 +1,7 @@
 # lettery
 Simple jQuery plugin to help repair some bad text behavior.
 ## Usage
-  lettery accepts two parametters: ```letters``` and ```options
+  lettery accepts two parametters: ```letters``` and ```options```
 
 ```
 $( '.lettery' ).lettery( letters, options );```
