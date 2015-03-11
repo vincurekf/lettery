@@ -24,7 +24,7 @@ styles: {
 
 Full example:
 ```
-$( '.lettery' ).lettery( [ "bones", "ribs" ], {
+$( '.lettery' ).lettery( [ "bone", "ribs" ], {
   styles: {
     'position': 'relative',
     'bottom': '4px',
@@ -36,5 +36,7 @@ $( '.lettery' ).lettery( [ "bones", "ribs" ], {
 ```
 
 Preview:
+
 ![lettery preview](https://raw.githubusercontent.com/vincurekf/lettery/master/preview.jpg)
+
 Licence MIT, so, you know...
