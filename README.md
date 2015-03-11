@@ -4,7 +4,7 @@ Simple jQuery plugin to help repair some bad text behavior.
   lettery accepts two parametters: ```letters``` and ```options
 
 ```
-$( '.lettery' ).lettery( letters, options );```</pre>
+$( '.lettery' ).lettery( letters, options );```
 ```
 
 ```letters/words``` should be an array of letters or words, so for one letter it would be: 
