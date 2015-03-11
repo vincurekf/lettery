@@ -12,7 +12,7 @@
 		var options = $.extend({
 			// These are the defaults.
 			styles: {},
-			class: '.letters',
+			class: 'letter',
 			words: false
 		}, options );
 		// get the input text
@@ -37,7 +37,7 @@
 				// iteratee through each word and assign span with class and styles (options)
 				for(var i = 0; words.length > i; i++){
 					if( isInArray( letters, words[i] ) ){
-						output += '<span class="'+options.class+'">'+words[i]+' </span>';
+						output += '<span class="'+options.class+'">'+words[i]+'</span> ';
 					}else{
 						output += words[i]+' ';
 					}
