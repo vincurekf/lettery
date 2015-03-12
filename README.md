@@ -37,6 +37,6 @@ $( '.lettery' ).lettery( [ "bone", "ribs" ], {
 
 Preview:
 
-![lettery preview](https://raw.githubusercontent.com/vincurekf/lettery/master/preview.jpg)
+![lettery preview](https://raw.githubusercontent.com/vincurekf/lettery/master/example/preview.jpg)
 
 Licence MIT, so, you know...
